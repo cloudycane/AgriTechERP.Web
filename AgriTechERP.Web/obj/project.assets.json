@@ -1,0 +1,150 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "AgriTechERP.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AgriTechERP.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AgriTechERP.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgriTechERP.Application.dll": {}
+        }
+      },
+      "AgriTechERP.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/AgriTechERP.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgriTechERP.Core.dll": {}
+        }
+      },
+      "AgriTechERP.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AgriTechERP.Application": "1.0.0",
+          "AgriTechERP.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AgriTechERP.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AgriTechERP.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AgriTechERP.Application/1.0.0": {
+      "type": "project",
+      "path": "../AgriTechERP.Application/AgriTechERP.Application.csproj",
+      "msbuildProject": "../AgriTechERP.Application/AgriTechERP.Application.csproj"
+    },
+    "AgriTechERP.Core/1.0.0": {
+      "type": "project",
+      "path": "../AgriTechERP.Core/AgriTechERP.Core.csproj",
+      "msbuildProject": "../AgriTechERP.Core/AgriTechERP.Core.csproj"
+    },
+    "AgriTechERP.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../AgriTechERP.Infrastructure/AgriTechERP.Infrastructure.csproj",
+      "msbuildProject": "../AgriTechERP.Infrastructure/AgriTechERP.Infrastructure.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "AgriTechERP.Application >= 1.0.0",
+      "AgriTechERP.Core >= 1.0.0",
+      "AgriTechERP.Infrastructure >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gesel\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\AgriTechERP.Web.csproj",
+      "projectName": "AgriTechERP.Web",
+      "projectPath": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\AgriTechERP.Web.csproj",
+      "packagesPath": "C:\\Users\\gesel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\gesel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Application\\AgriTechERP.Application.csproj": {
+              "projectPath": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Application\\AgriTechERP.Application.csproj"
+            },
+            "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Core\\AgriTechERP.Core.csproj": {
+              "projectPath": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Core\\AgriTechERP.Core.csproj"
+            },
+            "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Infrastructure\\AgriTechERP.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Infrastructure\\AgriTechERP.Infrastructure.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
