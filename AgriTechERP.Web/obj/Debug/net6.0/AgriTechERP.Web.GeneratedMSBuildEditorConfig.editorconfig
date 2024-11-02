@@ -18,6 +18,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Web
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/Views/ProductoSuministrador/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cVmlld3NcUHJvZHVjdG9TdW1pbmlzdHJhZG9yXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/Views/ProductoSuministrador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cVmlld3NcUHJvZHVjdG9TdW1pbmlzdHJhZG9yXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/Views/Suministrador/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cVmlld3NcU3VtaW5pc3RyYWRvclxDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/Views/Suministrador/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cVmlld3NcU3VtaW5pc3RyYWRvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Adquisicion/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRxdWlzaWNpb25cX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Cliente/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2xpZW50ZVxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

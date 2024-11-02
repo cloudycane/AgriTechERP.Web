@@ -1,0 +1,16 @@
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\bin\Debug\net6.0\AgriTechERP.Application.deps.json
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\bin\Debug\net6.0\AgriTechERP.Application.dll
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\bin\Debug\net6.0\AgriTechERP.Application.pdb
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\bin\Debug\net6.0\AgriTechERP.Core.dll
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\bin\Debug\net6.0\AgriTechERP.Core.pdb
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.csproj.AssemblyReference.cache
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.AssemblyInfoInputs.cache
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.AssemblyInfo.cs
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.csproj.CoreCompileInputs.cache
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.sourcelink.json
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTech.5A5BD796.Up2Date
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.dll
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\refint\AgriTechERP.Application.dll
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\AgriTechERP.Application.pdb
+C:\Users\gesel\source\repos\AgriTechERP.Web\AgriTechERP.Application\obj\Debug\net6.0\ref\AgriTechERP.Application.dll
