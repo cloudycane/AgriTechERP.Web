@@ -1,0 +1,60 @@
+﻿@model ListadoOrdenCarritoViewModel
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Estado de Aprobación</th>
+                <th>Cantidad</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var orden in Model.listadoOrdenCarrito)
+            {
+                <tr>
+                    <td>@orden.ProductoSuministrador.NombreProducto</td>
+
+                    @if(orden.Aprobacion == AprobacionEnum.Pendiente)
+                    {
+                        <td>
+                            <span class="label label-warning">Pendiente de Aprobación</span>
+                        </td>
+                        
+                    }
+
+                    @if(orden.Aprobacion == AprobacionEnum.EnRevision)
+                    {
+                        <td>
+                            <span class="label label-info">En Revisión</span>
+                        </td>
+                    }
+
+                    @if(orden.Aprobacion == AprobacionEnum.Aprobado)
+                    {
+                        <td>
+                            <span class="label label-success">Aprobado</span>
+                        </td>
+                    }
+                    @if(orden.Aprobacion == AprobacionEnum.Rechazado)
+                    {
+                        <td>
+                            <span class="label label-danger">Rechazado</span>
+                        </td>
+                    }
+
+                    <td>@orden.Cantidad</td>
+                    <td>
+                        @if (orden.Aprobacion == AprobacionEnum.Aprobado)
+                        {
+                            <a asp-area="Inventario" asp-action="AñadirAlInventario" asp-controller="General" asp-route-ordenId="@orden.Id" class="btn btn-primary">Comprar</a>
+                        }
+                    </td>
+                   
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

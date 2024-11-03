@@ -13,6 +13,7 @@ namespace AgriTechERP.Core.Entidades
         public string Descripcion { get; set; }
         public int SuministradorId { get; set; }
         public SuministradorModel Suministrador { get; set;}
+       
         
     }
 }

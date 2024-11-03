@@ -22,6 +22,56 @@ namespace AgriTechERP.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.InventarioModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("OrdenCarritoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductoSuministradorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StockActual")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrdenCarritoId");
+
+                    b.HasIndex("ProductoSuministradorId");
+
+                    b.ToTable("Inventarios");
+                });
+
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.OrdenCarritoModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("Aprobacion")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductoSuministradorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductoSuministradorId");
+
+                    b.ToTable("OrdenCarritos");
+                });
+
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProductoSuministradorModel", b =>
                 {
                     b.Property<int>("Id")
@@ -75,6 +125,35 @@ namespace AgriTechERP.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Suministradores");
+                });
+
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.InventarioModel", b =>
+                {
+                    b.HasOne("AgriTechERP.Core.Entidades.OrdenCarritoModel", "OrdenCarrito")
+                        .WithMany()
+                        .HasForeignKey("OrdenCarritoId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("AgriTechERP.Core.Entidades.ProductoSuministradorModel", "ProductoSuministrador")
+                        .WithMany()
+                        .HasForeignKey("ProductoSuministradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OrdenCarrito");
+
+                    b.Navigation("ProductoSuministrador");
+                });
+
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.OrdenCarritoModel", b =>
+                {
+                    b.HasOne("AgriTechERP.Core.Entidades.ProductoSuministradorModel", "ProductoSuministrador")
+                        .WithMany()
+                        .HasForeignKey("ProductoSuministradorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProductoSuministrador");
                 });
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProductoSuministradorModel", b =>

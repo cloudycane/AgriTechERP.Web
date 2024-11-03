@@ -7,6 +7,7 @@
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Proveedor</th>
+                <th>Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -16,6 +17,9 @@
                     <td>@productosSuministrador.NombreProducto</td>
                     <td>@productosSuministrador.Descripcion</td>
                     <td>@productosSuministrador.Suministrador.RazonSocial</td>
+                    <td>
+                        @Html.ActionLink("Ordenar", "Ordenar", "OrdenCarrito", new { productoId = productosSuministrador.Id }, new { @class = "btn btn-primary", @id = "btnIndex" })
+                    </td>
                 </tr>
             }
         </tbody>
