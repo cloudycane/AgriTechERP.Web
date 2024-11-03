@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <Folder Include="Views\PartialViews\" />
-    <Folder Include="Views\ViewModels\ListadoViewModels\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -15,6 +15,12 @@
             <label class="col-form-label"></label>
             <input class="form-control" asp-for="Descripcion" />
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <div class="col-lg-4">
+            @Html.DropDownListFor(model => model.SuministradorId, (SelectList)ViewBag.SuministradorSelectList, "Seleccionar", new { @class = "form-control" })
+        </div>
+        <div class="col-lg-4">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+        
     </form>
 </div>

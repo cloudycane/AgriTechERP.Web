@@ -1,7 +1,10 @@
 ﻿using AgriTechERP.Core.Entidades;
 using AgriTechERP.Infrastructure.Data;
+using AgriTechERP.Web.Views.ViewModels.ListadoViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
 {
@@ -15,9 +18,15 @@ namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
             _context = context;
         }
         // GET: ProductoSuministradorController
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var productoSuministrador = await _context.ProductosSuministradores.Include(s => s.Suministrador).ToListAsync();
+
+            var listadoViewModel = new ListadoProductoSuministradorViewModel
+            {
+                productosSuministradores = productoSuministrador,
+            };
+            return View(listadoViewModel);
         }
 
         // GET: ProductoSuministradorController/Details/5
@@ -27,8 +36,10 @@ namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
         }
 
         // GET: ProductoSuministradorController/Create
-        public ActionResult Crear()
+        public async Task<IActionResult> Crear()
         {
+            var listadoSuministrador = await _context.Suministradores.ToListAsync();
+            ViewBag.SuministradorSelectList = new SelectList(listadoSuministrador, "Id", "RazonSocial");
             return View();
         }
 
