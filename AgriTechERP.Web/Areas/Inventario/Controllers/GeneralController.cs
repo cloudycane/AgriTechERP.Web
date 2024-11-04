@@ -1,4 +1,5 @@
 ﻿using AgriTechERP.Infrastructure.Data;
+using AgriTechERP.Web.Views.ViewModels.ListadoViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,9 +15,15 @@ namespace AgriTechERP.Web.Areas.Inventario.Controllers
             _context = context;
         }
         // GET: InventarioController
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var listadoInventario = await _context.Inventarios.Include(p => p.ProductoSuministrador).ToListAsync();
+
+            var viewModel = new ListadoInventarioViewModel
+            {
+                Inventario = listadoInventario
+            };
+            return View(viewModel);
         }
 
         // GET: InventarioController/Details/5

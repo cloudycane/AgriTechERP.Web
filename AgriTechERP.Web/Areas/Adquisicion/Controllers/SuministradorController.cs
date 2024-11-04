@@ -32,12 +32,10 @@ namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
         }
 
         // GET: SuministradorController/Create
-        public async Task<IActionResult> Crear()
+        public IActionResult Crear()
         {
-            var listadoProductoSuministrador = await _context.ProductosSuministradores.ToListAsync();
-            var productoSuministradorSelectListItem = new SelectList(listadoProductoSuministrador, "Id", "NombreProducto");
-            
-            return View(productoSuministradorSelectListItem);
+
+            return View();
         }
 
         // POST: SuministradorController/Create
