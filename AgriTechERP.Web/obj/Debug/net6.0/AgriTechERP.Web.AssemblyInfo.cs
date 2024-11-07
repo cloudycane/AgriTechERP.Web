@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AgriTechERP.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc5b0adbfd3aa4bd1128cba6a72f2b6e229aed8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3db8aa58d6a065652bc38852fc178752529f44d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AgriTechERP.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AgriTechERP.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

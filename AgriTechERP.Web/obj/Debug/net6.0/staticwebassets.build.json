@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "okWeloAtdhimPL9eYmFQwpKYpTBLbL7GNGPCpBQno3E=",
+  "Hash": "viMPxAwCDuB/fJdLelsM03qsZPSJsRR5uIGxaDpZubQ=",
   "Source": "AgriTechERP.Web",
   "BasePath": "_content/AgriTechERP.Web",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AgriTechERP.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\carousel.css",
+      "SourceId": "AgriTechERP.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\",
+      "BasePath": "_content/AgriTechERP.Web",
+      "RelativePath": "css/carousel.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\carousel.css"
     },
     {
       "Identity": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\site.css",
