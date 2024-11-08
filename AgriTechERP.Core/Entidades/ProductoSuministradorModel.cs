@@ -20,6 +20,9 @@ namespace AgriTechERP.Core.Entidades
         [Display(Name = "Suministrador/Proveedor")]
         public int SuministradorId { get; set; }
         public SuministradorModel Suministrador { get; set;}
+
+        [Display(Name = "Coste de Producto")]
+        public decimal CosteProducto { get; set; }
        
         
     }

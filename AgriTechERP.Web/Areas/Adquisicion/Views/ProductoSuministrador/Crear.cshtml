@@ -14,19 +14,19 @@
 
     <form method="post" asp-action="Crear">
         <div asp-validation-summary="ModelOnly"></div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             @Html.LabelFor(model => model.NombreProducto)
             @Html.TextBoxFor(model => model.NombreProducto, "", new{ @class = "form-control", @style = "margin: 2%;" })
             @Html.ValidationMessageFor(model => model.NombreProducto, "" , new { @class = "text-danger" })
             
             
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             @Html.LabelFor(model => model.Descripcion)
             @Html.TextBoxFor(model => model.Descripcion, "", new { @class = "form-control", @style = "margin: 2%;"})
             @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             @Html.LabelFor(model => model.Suministrador.RazonSocial)
             @Html.DropDownListFor(
                      model => model.SuministradorId,
@@ -35,6 +35,12 @@
                      new { @class = "form-control", @style = "margin: 2%;" }
                      )
         </div>
+        <div class="col-lg-3">
+            @Html.LabelFor(model => model.CosteProducto)
+            @Html.TextBoxFor(model => model.CosteProducto, "", new { @class = "form-control", @style = "margin: 2%;" })
+        </div>
+
+
         <div>
             <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
         </div>

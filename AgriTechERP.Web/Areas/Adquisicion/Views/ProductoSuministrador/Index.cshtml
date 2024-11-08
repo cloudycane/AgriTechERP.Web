@@ -1,12 +1,19 @@
 ﻿@model ListadoProductoSuministradorViewModel
 
+@{
+    ViewData["Title"] = "Inicio - Producto Suministradores"; 
+}
+
+<link rel="stylesheet" href="~/css/indexProductoSuministrador.css" asp-append-version="true" />
 <div class="container">
+    <h1>Productos Suministradores</h1>
     <table class="table table-striped">
         <thead>
             <tr>
                 <th>Nombre</th>
                 <th>Descripción</th>
                 <th>Proveedor</th>
+                <th>Coste</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -17,8 +24,11 @@
                     <td>@productosSuministrador.NombreProducto</td>
                     <td>@productosSuministrador.Descripcion</td>
                     <td>@productosSuministrador.Suministrador.RazonSocial</td>
+                    <td>@productosSuministrador.CosteProducto</td>
                     <td>
                         @Html.ActionLink("Ordenar", "Ordenar", "OrdenCarrito", new { productoId = productosSuministrador.Id }, new { @class = "btn btn-primary", @id = "btnIndex" })
+                        @Html.ActionLink("Editar", "", "", new {}, new { @class = "btn btn-info", @id = "btnIndex" })
+                        @Html.ActionLink("Eliminar", "", "", new {}, new { @class = "btn btn-danger", @id = "btnIndex"})
                     </td>
                 </tr>
             }

@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\carousel.css"
     },
     {
+      "Id": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\indexProductoSuministrador.css",
+      "PackagePath": "staticwebassets\\css\\indexProductoSuministrador.css"
+    },
+    {
       "Id": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
