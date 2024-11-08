@@ -72,6 +72,26 @@ namespace AgriTechERP.Infrastructure.Migrations
                     b.ToTable("OrdenCarritos");
                 });
 
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.ProduccionModel", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("EstadoProductoProduccion")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NombreProducto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductosProduccion");
+                });
+
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProductoSuministradorModel", b =>
                 {
                     b.Property<int>("Id")
@@ -81,15 +101,22 @@ namespace AgriTechERP.Infrastructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Descripcion")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NombreProducto")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ProduccionModelId")
+                        .HasColumnType("int");
 
                     b.Property<int>("SuministradorId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProduccionModelId");
 
                     b.HasIndex("SuministradorId");
 
@@ -158,6 +185,10 @@ namespace AgriTechERP.Infrastructure.Migrations
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProductoSuministradorModel", b =>
                 {
+                    b.HasOne("AgriTechERP.Core.Entidades.ProduccionModel", null)
+                        .WithMany("Ingredientes")
+                        .HasForeignKey("ProduccionModelId");
+
                     b.HasOne("AgriTechERP.Core.Entidades.SuministradorModel", "Suministrador")
                         .WithMany()
                         .HasForeignKey("SuministradorId")
@@ -165,6 +196,11 @@ namespace AgriTechERP.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("Suministrador");
+                });
+
+            modelBuilder.Entity("AgriTechERP.Core.Entidades.ProduccionModel", b =>
+                {
+                    b.Navigation("Ingredientes");
                 });
 #pragma warning restore 612, 618
         }

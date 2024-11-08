@@ -4,22 +4,39 @@
     ViewData["Title"] = "Crear Producto";
 }
 
+
+<h1>Crear Producto de Suministrador</h1>
+<hr />
+
+
 <div class="container">
+
+
     <form method="post" asp-action="Crear">
+        <div asp-validation-summary="ModelOnly"></div>
         <div class="col-lg-4">
-            <label class="col-form-label">Nombre</label>
-            <input class="form-control" asp-for="NombreProducto" />
+            @Html.LabelFor(model => model.NombreProducto)
+            @Html.TextBoxFor(model => model.NombreProducto, "", new{ @class = "form-control", @style = "margin: 2%;" })
+            @Html.ValidationMessageFor(model => model.NombreProducto, "" , new { @class = "text-danger" })
+            
             
         </div>
         <div class="col-lg-4">
-            <label class="col-form-label"></label>
-            <input class="form-control" asp-for="Descripcion" />
+            @Html.LabelFor(model => model.Descripcion)
+            @Html.TextBoxFor(model => model.Descripcion, "", new { @class = "form-control", @style = "margin: 2%;"})
+            @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
         </div>
         <div class="col-lg-4">
-            @Html.DropDownListFor(model => model.SuministradorId, (SelectList)ViewBag.SuministradorSelectList, "Seleccionar", new { @class = "form-control" })
+            @Html.LabelFor(model => model.Suministrador.RazonSocial)
+            @Html.DropDownListFor(
+                     model => model.SuministradorId,
+                     ViewBag.SuministradorSelectList as SelectList,
+                     "Seleccionar",
+                     new { @class = "form-control", @style = "margin: 2%;" }
+                     )
         </div>
-        <div class="col-lg-4">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+        <div>
+            <button type="submit" class="btn btn-primary" style="float: right;">Enviar</button>
         </div>
         
     </form>

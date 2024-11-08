@@ -1,0 +1,30 @@
+﻿@model IEnumerable<ProduccionModel>
+
+<h2>Producción</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producto a Producir</th>
+            <th>Ingredientes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var produccion in Model)
+        {
+            <tr>
+                <td>@produccion.Id</td>
+                <td>@produccion.NombreProducto</td>
+                <td>
+                    <ul>
+                        @foreach (var ingrediente in produccion.Ingredientes)
+                        {
+                            <li>@ingrediente.NombreProducto</li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

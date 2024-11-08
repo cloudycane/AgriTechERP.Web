@@ -12,6 +12,7 @@ namespace AgriTechERP.Infrastructure.Data
         public DbSet<ProductoSuministradorModel> ProductosSuministradores { get; set; }
         public DbSet<OrdenCarritoModel> OrdenCarritos { get; set; }
         public DbSet<InventarioModel> Inventarios { get; set; }
+        public DbSet<ProduccionModel> ProductosProduccion {  get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +24,7 @@ namespace AgriTechERP.Infrastructure.Data
                 .HasForeignKey(i => i.OrdenCarritoId)
                 .OnDelete(DeleteBehavior.SetNull);
 
+          
         }
 
     }

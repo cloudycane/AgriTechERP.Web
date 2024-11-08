@@ -1,0 +1,26 @@
+﻿@model ProduccionModel
+@{
+    var productosSuministradores = ViewBag.ProductosSuministradores as List<ProductoSuministradorModel>;
+}
+
+<h2>Crear Nueva Producción</h2>
+
+<form asp-action="Crear" method="post">
+    <div class="form-group">
+        <label asp-for="NombreProducto"></label>
+        <input asp-for="NombreProducto" class="form-control" />
+        <span asp-validation-for="NombreProducto" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Seleccionar Ingredientes</label>
+        <select asp-for="Ingredientes" class="form-control" multiple name="ingredientesIds">
+            @foreach (var producto in productosSuministradores)
+            {
+                <option value="@producto.Id">@producto.NombreProducto</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+</form>

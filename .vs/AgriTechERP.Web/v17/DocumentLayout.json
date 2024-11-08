@@ -11,16 +11,20 @@
       "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\wwwroot\\css\\carousel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\wwwroot\\css\\carousel.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\views\\viewmodels\\produccionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\views\\viewmodels\\produccionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\areas\\inventario\\controllers\\generalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\areas\\inventario\\controllers\\generalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\areas\\produccion\\controllers\\producciongeneralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\areas\\produccion\\controllers\\producciongeneralcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B82AF37-A86A-4F40-803D-D276EA65FC09}|AgriTechERP.Core\\AgriTechERP.Core.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.core\\entidades\\inventariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B82AF37-A86A-4F40-803D-D276EA65FC09}|AgriTechERP.Core\\AgriTechERP.Core.csproj|solutionrelative:agritecherp.core\\entidades\\inventariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\areas\\produccion\\views\\producciongeneral\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\areas\\produccion\\views\\producciongeneral\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|c:\\users\\gesel\\source\\repos\\agritecherp.web\\agritecherp.web\\areas\\produccion\\views\\producciongeneral\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{13CE95A1-3341-4945-9B7D-95CC06D766EE}|AgriTechERP.Web\\AgriTechERP.Web.csproj|solutionrelative:agritecherp.web\\areas\\produccion\\views\\producciongeneral\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,15 +42,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T18:35:36.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "carousel.css",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\carousel.css",
-              "RelativeDocumentMoniker": "AgriTechERP.Web\\wwwroot\\css\\carousel.css",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\wwwroot\\css\\carousel.css",
-              "RelativeToolTip": "AgriTechERP.Web\\wwwroot\\css\\carousel.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-07T16:38:41.913Z",
+              "Title": "ProduccionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\ViewModels\\ProduccionViewModel.cs",
+              "RelativeDocumentMoniker": "AgriTechERP.Web\\Views\\ViewModels\\ProduccionViewModel.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\ViewModels\\ProduccionViewModel.cs",
+              "RelativeToolTip": "AgriTechERP.Web\\Views\\ViewModels\\ProduccionViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:35:32.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Crear.cshtml",
+              "RelativeDocumentMoniker": "AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Crear.cshtml",
+              "RelativeToolTip": "AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Crear.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T18:13:23.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProduccionGeneralController.cs",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Controllers\\ProduccionGeneralController.cs",
+              "RelativeDocumentMoniker": "AgriTechERP.Web\\Areas\\Produccion\\Controllers\\ProduccionGeneralController.cs",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Controllers\\ProduccionGeneralController.cs",
+              "RelativeToolTip": "AgriTechERP.Web\\Areas\\Produccion\\Controllers\\ProduccionGeneralController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T18:07:24.18Z",
               "EditorCaption": ""
             },
             {
@@ -57,48 +100,22 @@
               "RelativeDocumentMoniker": "AgriTechERP.Web\\Areas\\Cliente\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Cliente\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "AgriTechERP.Web\\Areas\\Cliente\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJ0AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAAAKgAAADuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T16:33:38.255Z",
+              "WhenOpened": "2024-11-08T18:05:29.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AgriTechERP.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAACcAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Index.cshtml",
+              "RelativeDocumentMoniker": "AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Index.cshtml",
+              "RelativeToolTip": "AgriTechERP.Web\\Areas\\Produccion\\Views\\ProduccionGeneral\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T16:29:44.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeneralController.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Inventario\\Controllers\\GeneralController.cs",
-              "RelativeDocumentMoniker": "AgriTechERP.Web\\Areas\\Inventario\\Controllers\\GeneralController.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Web\\Areas\\Inventario\\Controllers\\GeneralController.cs",
-              "RelativeToolTip": "AgriTechERP.Web\\Areas\\Inventario\\Controllers\\GeneralController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBAAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:28:01.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "InventarioModel.cs",
-              "DocumentMoniker": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Core\\Entidades\\InventarioModel.cs",
-              "RelativeDocumentMoniker": "AgriTechERP.Core\\Entidades\\InventarioModel.cs",
-              "ToolTip": "C:\\Users\\gesel\\source\\repos\\AgriTechERP.Web\\AgriTechERP.Core\\Entidades\\InventarioModel.cs",
-              "RelativeToolTip": "AgriTechERP.Core\\Entidades\\InventarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T16:27:41.741Z",
+              "WhenOpened": "2024-11-08T18:05:23.693Z",
               "EditorCaption": ""
             }
           ]
