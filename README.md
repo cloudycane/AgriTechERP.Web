@@ -3,5 +3,5 @@
 <img src="AgriTechWeb.gif" alt="Landing Page AgriTech"/>
 ## Módulo 1: Adquisición 
 <p>El módulo de Adquisición compone de submódulos que interactúan entre sí y son: Portal Suministrador, Productos Suministrador, Ordenes en Carrito, etc. Además, este módulo puede relacionar con otros módulos.</p>
-### Portal Suministrador
+<h3>Portal Suministrador</h3>
 <img src="AgriTechWebSuministradorCrear.gif" alt="PortalSuministrador"/>
