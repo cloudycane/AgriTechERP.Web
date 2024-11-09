@@ -3,3 +3,4 @@
 <img src="AgriTechWeb.gif" alt="Landing Page AgriTech"/>
 ## Módulo 1: Adquisición 
 ### Portal Suministrador
+<img src="AgriTechWebSuministradorCrear.gif" alt="PortalSuministrador"/>
