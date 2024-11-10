@@ -5,3 +5,4 @@
 <p>El módulo de Adquisición compone de submódulos que interactúan entre sí y son: Portal Suministrador, Productos Suministrador, Ordenes en Carrito, etc. Además, este módulo puede relacionar con otros módulos.</p>
 <h3>Portal Suministrador</h3>
 <img src="AgriTechWebSuministradorCrear.gif" alt="PortalSuministrador"/>
+<h3>Creación de Producto Suministrador</h3>
