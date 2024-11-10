@@ -6,3 +6,4 @@
 <h3>Portal Suministrador</h3>
 <img src="AgriTechWebSuministradorCrear.gif" alt="PortalSuministrador"/>
 <h3>Creación de Producto Suministrador</h3>
+<img src="AgriTechWebCrearPS.gif" alt="ProductoSuministrador" />
