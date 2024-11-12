@@ -27,10 +27,19 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">@User.Identity.Name</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Help</a></li>
+                        @if(User.Identity.IsAuthenticated)
+                        {
+                            <li><a href="#">@User.Identity.Name</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a asp-action="CerrarSesion" asp-area="Registrar" asp-controller="Cuenta">Cerrar Sesión</a></li>
+                        }
+                        else
+                        {
+                            <li><a href="#">Settings</a></li>
+                            <li><a asp-controller="Cuenta" asp-area="Registrar" asp-action="Registrar">Registrar</a></li>
+                            <li><a asp-controller="Cuenta" asp-area="Registrar" asp-action="IniciarSesion">Login</a></li>
+                        }
+                        
                     </ul>
                     <form class="navbar-form navbar-right">
                         <input type="text" class="form-control" placeholder="Buscar...">

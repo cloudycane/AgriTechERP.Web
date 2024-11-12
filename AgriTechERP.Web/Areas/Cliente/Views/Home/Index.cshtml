@@ -70,11 +70,11 @@
                             @if(User.Identity.IsAuthenticated)
                             {
                                 <li><a>Hola, @User.Identity.Name</a></li>
-                                <li><a>Cerrar Sesión</a></li>
+                                <li><a asp-controller="Cuenta" asp-action="CerrarSesion" asp-area="Registrar">Cerrar Sesión</a></li>
                             }
                             else
                             {
-                                <li style="float: right;"><a>Iniciar Sesión</a></li>
+                                <li style="float: right;"><a asp-action="IniciarSesion" asp-controller="Cuenta" asp-area="Registrar">Iniciar Sesión</a></li>
                                 <li style="float: right;"><a asp-action="Registrar" asp-controller="Cuenta" asp-area="Registrar">Registrar</a></li>
                             }
                             

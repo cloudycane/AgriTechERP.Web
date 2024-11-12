@@ -74,6 +74,44 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
             
             return View(registrarDTO);
         }
+
+        public async Task<IActionResult> CerrarSesion()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home", new { area = "Cliente" });
+        }
+
+        // GET 
+
+        public IActionResult IniciarSesion()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public async Task<IActionResult> IniciarSesion(LoginDTO loginDTO)
+        {
+
+            if (ModelState.IsValid == false)
+            {
+                ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
+                return View(loginDTO);
+            }
+
+           var result = await _signInManager.PasswordSignInAsync(loginDTO.Email, loginDTO.Password, isPersistent: false, lockoutOnFailure: false);
+            
+           if(result.Succeeded)
+           {
+                return RedirectToAction("Index");
+           }
+           
+           ModelState.AddModelError("IniciarSesion", "Invalid email or password");     
+          
+           return View(loginDTO);
+        }
+
+
         // GET: CuentaController/Details/5
         public ActionResult Details(int id)
         {

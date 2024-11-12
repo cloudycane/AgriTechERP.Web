@@ -94,6 +94,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVnaXN0cmFyXFZpZXdzXEN1ZW50YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Registrar/Views/Cuenta/IniciarSesion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVnaXN0cmFyXFZpZXdzXEN1ZW50YVxJbmljaWFyU2VzaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/gesel/source/repos/AgriTechERP.Web/AgriTechERP.Web/Areas/Registrar/Views/Cuenta/Registrar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVnaXN0cmFyXFZpZXdzXEN1ZW50YVxSZWdpc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
