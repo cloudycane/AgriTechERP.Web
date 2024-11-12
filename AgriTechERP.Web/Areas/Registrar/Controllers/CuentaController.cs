@@ -10,10 +10,13 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
     public class CuentaController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public CuentaController(UserManager<ApplicationUser> userManager)
+
+        public CuentaController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
+            _signInManager = signInManager;
         }
 
 
@@ -46,15 +49,19 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
                 PhoneNumber = registrarDTO.Phone,
                 UserName = registrarDTO.Email,
                 NombreCompleto = registrarDTO.PersonName, 
-                // No hace falta poner las contraseñas
+               
             };
 
 
             // IdentityResult si exitoso o no
-            IdentityResult result = await _userManager.CreateAsync(user);
+            IdentityResult result = await _userManager.CreateAsync(user, registrarDTO.Password);
             
             if (result.Succeeded)
             {
+                // SIGN IN 
+                await _signInManager.SignInAsync(user, isPersistent : false); // keep me logged in feature...
+
+
                 return RedirectToAction("Index");
             }
             else

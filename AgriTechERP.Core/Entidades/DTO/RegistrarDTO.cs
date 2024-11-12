@@ -23,6 +23,7 @@ namespace AgriTechERP.Core.Entidades.DTO
         public string Password { get; set; }
         [Required(ErrorMessage = "El campo {0} es necesario rellenar")]
         [DataType(DataType.Password)]
+        [Compare("Password", ErrorMessage = "Las dos contraseñas no coinciden entre sí.")]
         public string ConfirmPassword { get; set; }
     }
 }

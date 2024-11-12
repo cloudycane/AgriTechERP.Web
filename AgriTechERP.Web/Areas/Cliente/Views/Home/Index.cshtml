@@ -67,8 +67,18 @@
                                     <li><a href="#">One more separated link</a></li>
                                 </ul>
                             </li>
-                            <li style="float: right;"><a asp-action="Registrar" asp-controller="Cuenta" asp-area="Registrar">Registrar</a></li>
-                            <li style="float: right;"><a>Iniciar Sesión</a></li>
+                            @if(User.Identity.IsAuthenticated)
+                            {
+                                <li><a>Hola, @User.Identity.Name</a></li>
+                                <li><a>Cerrar Sesión</a></li>
+                            }
+                            else
+                            {
+                                <li style="float: right;"><a>Iniciar Sesión</a></li>
+                                <li style="float: right;"><a asp-action="Registrar" asp-controller="Cuenta" asp-area="Registrar">Registrar</a></li>
+                            }
+                            
+                            
                         </ul>
                     </div>
                 </div>

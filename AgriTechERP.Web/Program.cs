@@ -12,6 +12,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 builder.Services.AddIdentity<ApplicationUser, ApplicationRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<ApplicationDbContext>()
     .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
     .AddRoleStore<RoleStore<ApplicationRole, ApplicationDbContext, Guid>>();
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    options.Password.RequireDigit = true; // requires at least one digit
+    options.Password.RequireLowercase = true; // requires at least one lowercase letter
+    options.Password.RequireUppercase = true; // requires at least one uppercase letter
+    options.Password.RequireNonAlphanumeric = true; // requires at least one special character
+    options.Password.RequiredLength = 6; // requires a minimum length
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,7 +34,9 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.UseRouting();
+app.UseAuthentication(); // Leyendo Identity Cookies 
+
+app.UseRouting(); // Identifying action method based route
 
 app.UseAuthorization();
 

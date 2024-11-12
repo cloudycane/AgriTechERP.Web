@@ -142,7 +142,7 @@ namespace AgriTechERP.Infrastructure.Migrations
 
                     b.HasIndex("ProductoSuministradorId");
 
-                    b.ToTable("Inventarios");
+                    b.ToTable("Inventarios", (string)null);
                 });
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.OrdenCarritoModel", b =>
@@ -166,7 +166,7 @@ namespace AgriTechERP.Infrastructure.Migrations
 
                     b.HasIndex("ProductoSuministradorId");
 
-                    b.ToTable("OrdenCarritos");
+                    b.ToTable("OrdenCarritos", (string)null);
                 });
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProduccionModel", b =>
@@ -186,7 +186,7 @@ namespace AgriTechERP.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ProductosProduccion");
+                    b.ToTable("ProductosProduccion", (string)null);
                 });
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.ProductoSuministradorModel", b =>
@@ -223,7 +223,7 @@ namespace AgriTechERP.Infrastructure.Migrations
 
                     b.HasIndex("SuministradorId");
 
-                    b.ToTable("ProductosSuministradores");
+                    b.ToTable("ProductosSuministradores", (string)null);
                 });
 
             modelBuilder.Entity("AgriTechERP.Core.Entidades.SuministradorModel", b =>
@@ -254,7 +254,7 @@ namespace AgriTechERP.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Suministradores");
+                    b.ToTable("Suministradores", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
