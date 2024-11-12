@@ -1,5 +1,6 @@
 ﻿using AgriTechERP.Core.Entidades;
 using AgriTechERP.Infrastructure.Data;
+using AgriTechERP.Web.Views.ViewModels.ListadoViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -20,9 +21,15 @@ namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
             _context = context;
         }
 
-        public ActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
+            var suministradores = await _context.Suministradores.ToListAsync();
+
+            var viewModel = new ListadoSuministradorViewModel
+            {
+                Suministradores = suministradores
+            };
+            return View(viewModel);
         }
 
         // GET: SuministradorController/Details/5

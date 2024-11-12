@@ -6,6 +6,10 @@
 
 <div class="container">
 
+    <h1>Registrar Suministrador</h1>
+    <hr />
+
+
     <form method="post">
         <div class="col-lg-3">
             <label>Razón Social</label>
@@ -24,21 +28,21 @@
 
         <div class="col-lg-3">
             <label>Fecha de Creación</label>
-            <input class="form-control" type="date"/>
+            <input class="form-control" asp-for="FechaCreacion" type="date"/>
         </div>
 
         <div class="col-lg-3">
             <label>Correo Electrónico</label>
-            <input class="form-control" type="email" />
+            <input class="form-control" asp-for="CorreoElectronico" type="email" />
         </div>
 
         <div class="col-lg-3">
             <label>Telefono</label>
-            <input class="form-control" />
+            <input class="form-control" asp-for="TelefonoContacto"/>
         </div>
 
         <div class="col-lg-3">
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button style="float: right; margin-top: 6%" type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
 </div>

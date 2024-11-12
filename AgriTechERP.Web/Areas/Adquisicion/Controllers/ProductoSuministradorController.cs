@@ -1,6 +1,7 @@
 ﻿using AgriTechERP.Core.Entidades;
 using AgriTechERP.Infrastructure.Data;
 using AgriTechERP.Web.Views.ViewModels.ListadoViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -40,7 +41,8 @@ namespace AgriTechERP.Web.Areas.Adquisicion.Controllers
         {
             var listadoSuministrador = await _context.Suministradores.ToListAsync();
             ViewBag.SuministradorSelectList = new SelectList(listadoSuministrador, "Id", "RazonSocial");
-            return View();
+            var model = new ProductoSuministradorModel();
+            return View(model);
         }
 
         // POST: ProductoSuministradorController/Create

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AgriTechERP.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -21,8 +22,12 @@ namespace AgriTechERP.Core.Entidades
         public int SuministradorId { get; set; }
         public SuministradorModel Suministrador { get; set;}
 
+        [Display(Name = "Moneda Preferida")]
+        public MonedaPreferenciaEnum MonedaPreferida {  get; set; }
+
         [Display(Name = "Coste de Producto")]
         public decimal CosteProducto { get; set; }
+
        
         
     }

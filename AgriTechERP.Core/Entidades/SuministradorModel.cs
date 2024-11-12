@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AgriTechERP.Core.Entidades
+﻿namespace AgriTechERP.Core.Entidades
 {
     public class SuministradorModel
     {
@@ -15,7 +9,5 @@ namespace AgriTechERP.Core.Entidades
         public DateTime FechaCreacion { get; set; }
         public string CorreoElectronico { get; set; }
         public string TelefonoContacto { get; set; }
-        
-
     }
 }

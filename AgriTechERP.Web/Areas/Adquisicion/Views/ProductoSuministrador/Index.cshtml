@@ -24,7 +24,7 @@
                     <td>@productosSuministrador.NombreProducto</td>
                     <td>@productosSuministrador.Descripcion</td>
                     <td>@productosSuministrador.Suministrador.RazonSocial</td>
-                    <td>@productosSuministrador.CosteProducto</td>
+                    <td>@productosSuministrador.MonedaPreferida @productosSuministrador.CosteProducto</td>
                     <td>
                         @Html.ActionLink("Ordenar", "Ordenar", "OrdenCarrito", new { productoId = productosSuministrador.Id }, new { @class = "btn btn-primary", @id = "btnIndex" })
                         @Html.ActionLink("Editar", "", "", new {}, new { @class = "btn btn-info", @id = "btnIndex" })

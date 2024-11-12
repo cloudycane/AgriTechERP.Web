@@ -1,5 +1,35 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model ListadoSuministradorViewModel
+
 @{
+    ViewData["Title"] = "Inicio - Portal Suministrador";
 }
+
+<div class="container">
+
+    <h1>Portal Suministrador</h1>
+    <hr />
+    
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Razón Social</th>
+                <th>Descripción</th>
+                <th>Correo Electrónico</th>
+                <th>Teléfono</th>
+                <th>CIF</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var suministrador in Model.Suministradores)
+            {
+                <tr>
+                    <td>@suministrador.RazonSocial</td>
+                    <td>@suministrador.Descripcion</td>
+                    <td>@suministrador.CorreoElectronico</td>
+                    <td>@suministrador.TelefonoContacto</td>
+                    <td>@suministrador.CIF</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

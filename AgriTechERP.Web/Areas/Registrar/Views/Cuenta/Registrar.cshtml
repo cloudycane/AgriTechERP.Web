@@ -1,0 +1,50 @@
+﻿@model RegistrarDTO
+
+@{
+   
+}
+
+
+<div class="form-containter">
+    Already Registered? <a asp-action="Login" asp-controller="Cuenta"  class="link-hover">Login</a>
+    <h2 class="text-large">Registrar</h2>
+    <div>
+        @if (ViewBag.Errors != null)
+        {
+            <div class="text-danger">
+                <ul>
+                    @foreach (string error in ViewBag.Errors)
+                    {
+                        <li>@error</li>
+                    }
+                </ul>
+            </div>
+        }
+    </div>
+    <form asp-controller="Cuenta" asp-action="Registrar" method="post">
+        <div class="col-lg-4">
+            <label asp-for="PersonName">Name</label>
+            <input asp-for="PersonName" class="form-control"/>
+        </div>
+        <div class="col-lg-4">
+            <label asp-for="Email">Email</label>
+            <input asp-for="Email" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            <label asp-for="Phone">Phone</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            <label asp-for="Password">Password</label>
+            <input asp-for="Password" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            <label asp-for="ConfirmPassword">Confirm Password</label>
+            <input asp-for="ConfirmPassword" class="form-control" />
+        </div>
+        <div class="col-lg-4">
+            <button class="btn btn-primary" type="submit" style="margin-top: 2%" >Register</button>
+        </div>
+       
+    </form>
+</div>
