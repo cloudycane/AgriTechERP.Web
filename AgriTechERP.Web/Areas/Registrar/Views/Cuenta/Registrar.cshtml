@@ -5,8 +5,8 @@
 }
 
 
-<div class="form-containter">
-    Already Registered? <a asp-action="Login" asp-controller="Cuenta"  class="link-hover">Login</a>
+<div class="form-containter" style="margin-top: 8%;">
+    Ya estás registrado? <a asp-action="IniciarSesion" asp-area="Registrar" asp-controller="Cuenta"  class="link-hover">Login</a>
     <h2 class="text-large">Registrar</h2>
     <div>
         @if (ViewBag.Errors != null)
@@ -20,7 +20,7 @@
                 </ul>
             </div>
         }
-    </div>
+   
 
     <form asp-controller="Cuenta" asp-action="Registrar" method="post">
         <div class="col-lg-4">
@@ -48,4 +48,5 @@
         </div>
        
     </form>
+</div>
 </div>

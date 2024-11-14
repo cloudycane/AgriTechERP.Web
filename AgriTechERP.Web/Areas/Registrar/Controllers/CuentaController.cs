@@ -1,5 +1,6 @@
 ﻿using AgriTechERP.Core.Entidades.DTO;
 using AgriTechERP.Core.Entidades.IdentityEntities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -21,17 +22,19 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
 
 
         // GET: CuentaController
+        [Authorize]
         public ActionResult Index()
         {
             return View();
         }
-
+        [AllowAnonymous]
         public ActionResult Registrar()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Registrar(RegistrarDTO registrarDTO)
         {
             // Comprobar si hay validation errors
@@ -83,6 +86,7 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
 
         // GET 
 
+        [AllowAnonymous]
         public IActionResult IniciarSesion()
         {
             return View();
@@ -90,6 +94,7 @@ namespace AgriTechERP.Web.Areas.Registrar.Controllers
 
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> IniciarSesion(LoginDTO loginDTO)
         {
 

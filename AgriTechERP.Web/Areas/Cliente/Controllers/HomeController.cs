@@ -1,10 +1,12 @@
 ﻿using AgriTechERP.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace AgriTechERP.Web.Areas.Cliente.Controllers
 {
     [Area("Cliente")]
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
