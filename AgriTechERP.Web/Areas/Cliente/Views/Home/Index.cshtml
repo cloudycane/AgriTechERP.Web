@@ -53,10 +53,12 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Inicio</a></li>
-                            <li><a href="#">Productos</a></li>
                            
                             @if(User.Identity.IsAuthenticated)
                             {
+                                <li><a asp-area="Adquisicion" asp-action="Index" asp-controller="Suministrador">Portal Suministrador</a></li>
+                                <li><a asp-area="Adquisicion" asp-action="Index" asp-controller="ProductoSuministrador">Materias Primas</a></li>
+                                <li><a asp-area="Adquisicion" asp-action="Index" asp-controller="OrdenCarrito">Orden Carrito <span class="glyphicon glyphicon-shopping-cart"></span></a></li>
                                 <li><a>Hola, @User.Identity.Name</a></li>
                                 <li><a asp-controller="Cuenta" asp-action="CerrarSesion" asp-area="Registrar">Cerrar Sesión</a></li>
                             }
@@ -66,7 +68,6 @@
                                 <li style="float: right;"><a asp-action="Registrar" asp-controller="Cuenta" asp-area="Registrar">Registrar</a></li>
                             }
                             
-                            
                         </ul>
                     </div>
                 </div>
@@ -74,7 +75,6 @@
 
         </div>
     </div>
-
 
     <!-- Carousel
     ================================================== -->
